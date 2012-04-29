@@ -24,6 +24,7 @@ my @patterns = qw{
     /usr/lib/courier-imap/bin
 
     ~/bin
+    ~/Dotfiles/bin
     ~/Dropbox/Linux/bin
 };
 

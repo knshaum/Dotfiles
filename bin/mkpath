@@ -1,0 +1,34 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+my @patterns = qw{
+    /usr/local/sbin
+    /usr/local/bin
+    /opt/local/bin
+    /opt/local/sbin
+    /sbin
+    /bin
+    /usr/sbin
+    /usr/bin
+
+    /Developer/usr/bin
+    /Developer/usr/sbin
+
+    /usr/local/cpanel/bin
+    /usr/local/jdk/bin
+    /usr/local/mysql/bin
+    /usr/X11R6/bin
+    /usr/lib/courier-imap/sbin
+    /usr/lib/courier-imap/bin
+
+    ~/bin
+    ~/Dropbox/Linux/bin
+};
+
+my @dirs;
+foreach my $pattern ( @patterns ) {
+    push @dirs, grep { -d } ( glob $pattern );
+}
+print join(':', @dirs), "\n";

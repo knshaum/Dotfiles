@@ -10,15 +10,18 @@ alias ducks='du -cks * | sort -rn | head -11'
 alias tmclean="find . -name '._*' -print -exec rm {} \;"
 alias tmshow="find . -name '._*' -print"
 
-alias ulcp='cd /usr/local/cpanel'
-alias vcp='cd /var/cpanel'
-alias ea='cd /var/cpanel/perl/easy'
-alias tiers='curl http://qa-build.cpanel.net/cpanelsync/TIERS' 
+[ -x /usr/local/cpanel/build-tools/merge_request ] && alias merge='/usr/local/cpanel/build-tools/merge_request'
+[ -d ~/Documents/Dev/all                         ] && alias dda='cd ~/Documents/Dev/all'
 
-alias md='svn md'
-alias mdv='svn md | vim -R -'
-alias bmd='svn bmd'
-alias bmdv='svn bmd | vim -R -'
-alias sq='svn status -q'
+if [ -d /usr/local/cpanel ] ; then
+    alias ulcp='cd /usr/local/cpanel'
+    alias vcp='cd /var/cpanel'
+    alias ea='cd /var/cpanel/perl/easy'
+    alias tiers='curl http://qa-build.cpanel.net/cpanelsync/TIERS' 
 
-alias merge='/usr/local/cpanel/build-tools/merge_request'
+    alias md='svn md'
+    alias mdv='svn md | vim -R -'
+    alias bmd='svn bmd'
+    alias bmdv='svn bmd | vim -R -'
+    alias sq='svn status -q'
+fi

@@ -2,7 +2,10 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-# We keep the bit above to humor MacPorts, and completely rewrite PATH below.
+# The above lines included to humor MacPorts; now let's set PATH for reals.
 
 [ -x ~/bin/mkpath ] && export PATH=`~/bin/mkpath`
-[ -e ~/.bashrc    ] && source ~/.bashrc
+[ -r ~/.bashrc    ] && source ~/.bashrc
+
+export PS1='[\u@\h \w]\$ '
+export EDITOR='/usr/bin/vim'

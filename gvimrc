@@ -1,2 +1,3 @@
-set guifont=Menlo\ Regular\:h16
+set antialias
 colorscheme murphy
+set guifont=Menlo\ Regular\:h14

@@ -29,7 +29,3 @@ autocmd FileType perl set showmatch
 " make tab in normal mode ident code
 nmap <tab> I<tab><esc>
 nmap <s-tab> ^i<bs><esc>
-
-if has('gui_running')
-    set antialias
-endif

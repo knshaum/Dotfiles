@@ -1,5 +1,20 @@
+# .bashrc
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
 [ -r /etc/bashrc                 ] && source /etc/bashrc
 [ -r ~/.alias                    ] && source ~/.alias
 [ -r ~/perl5/perlbrew/etc/bashrc ] && source ~/perl5/perlbrew/etc/bashrc
 [ -r ~/.rvm/scripts/rvm          ] && source ~/.rvm/scripts/rvm
 [ -r ~/.pythonbrew/etc/bashrc    ] && source ~/.pythonbrew/etc/bashrc
+
+if [ -n "$PS1" ] ; then
+    if [ -r ~/Dotfiles/git-completion.sh ] ; then
+        source ~/Dotfiles/git-completion.sh
+        export PS1='[\u@\h:\w$(__git_ps1)]\$ '
+    else
+        export PS1='[\u@\h:\w]\$ '
+    fi
+fi

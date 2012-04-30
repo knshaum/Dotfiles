@@ -16,6 +16,8 @@ my @patterns = qw{
     /Developer/usr/bin
     /Developer/usr/sbin
 
+    /usr/local/cpanel/3rdparty/perl/514/bin
+    /usr/local/cpanel/3rdparty/bin
     /usr/local/cpanel/bin
     /usr/local/jdk/bin
     /usr/local/mysql/bin

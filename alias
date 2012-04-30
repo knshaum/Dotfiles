@@ -1,22 +1,30 @@
 alias d='ls -FL'
 alias dx='ls -AF'
-alias dl='ls -FLl'
+alias dl='ls -FhLl'
 alias dlx='ls -AFl'
 alias vimr='vim -R'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ackt='ack --text'
+alias ....='cd ../../..'
+alias etc='cd /etc'
+alias ackt='ack --text --type=nojs'
 alias ducks='du -cks * | sort -rn | head -11'
 alias tmclean="find . -name '._*' -print -exec rm {} \;"
 alias tmshow="find . -name '._*' -print"
+alias wtf="watch -n 1 w -hs" 
+alias wth="ps -uxa | more"
+
+alias dry="patch -p1 -F99 -s --dry-run"
+alias wet="patch -p1 -F99 -s"
 
 [ -x /usr/local/cpanel/build-tools/merge_request ] && alias merge='/usr/local/cpanel/build-tools/merge_request'
 [ -d ~/Documents/Dev/all                         ] && alias dda='cd ~/Documents/Dev/all'
 
 if [ -d /usr/local/cpanel ] ; then
     alias ulcp='cd /usr/local/cpanel'
+    alias ulap='cd /usr/local/apache'
     alias vcp='cd /var/cpanel'
-    alias ea='cd /var/cpanel/perl/easy'
+    alias ea='cd /root/dev/easy'
     alias tiers='curl http://qa-build.cpanel.net/cpanelsync/TIERS' 
 
     alias md='svn md'

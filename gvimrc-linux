@@ -1,0 +1,4 @@
+set antialias
+colorscheme murphy
+set lines=50 columns=140
+set guifont=Inconsolata\ 13

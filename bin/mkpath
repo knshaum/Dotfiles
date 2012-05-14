@@ -4,10 +4,11 @@ use strict;
 use warnings;
 
 my @patterns = qw{
-    /usr/local/sbin
-    /usr/local/bin
+    /usr/local/*/bin
     /opt/local/bin
     /opt/local/sbin
+    /usr/local/sbin
+    /usr/local/bin
     /sbin
     /bin
     /usr/sbin
@@ -31,7 +32,14 @@ my @patterns = qw{
 };
 
 my @dirs;
+my %found;
 foreach my $pattern ( @patterns ) {
-    push @dirs, grep { -d } ( glob $pattern );
+    my @globs = grep { -d } ( glob $pattern );
+    for my $dir ( @globs ) {
+        if ( !$found{$dir} ) {
+            push @dirs, $dir;
+            $found{$dir} = 1;
+        }
+    }
 }
 print join(':', @dirs), "\n";

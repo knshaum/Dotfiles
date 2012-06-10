@@ -4,9 +4,11 @@ use strict;
 use warnings;
 
 my @patterns = qw{
-    /usr/local/*/bin
-    /opt/local/bin
+    /opt/local/apache2/bin
+    /usr/local/mysql/bin
+
     /opt/local/sbin
+    /opt/local/bin
     /usr/local/sbin
     /usr/local/bin
     /sbin
@@ -14,11 +16,12 @@ my @patterns = qw{
     /usr/sbin
     /usr/bin
 
-    /Developer/usr/bin
     /Developer/usr/sbin
+    /Developer/usr/bin
 
     /usr/local/cpanel/3rdparty/perl/514/bin
     /usr/local/cpanel/3rdparty/bin
+    /usr/local/cpanel/scripts
     /usr/local/cpanel/bin
     /usr/local/jdk/bin
     /usr/local/mysql/bin

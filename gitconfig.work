@@ -1,0 +1,29 @@
+[user]
+	name = Kevin Shaum
+	email = kevin.shaum@cpanel.net
+[color]
+        status = auto
+        branch = auto
+	ui = auto
+[alias]
+        amend = commit --amend
+        b = branch
+        backport = cherry-pick -x -s
+        co = checkout
+	df = diff -M -C -b
+	df1 = diff -M -C -b HEAD^ HEAD
+        m = "checkout master"
+        s = status --untracked-files=no
+        st = status
+        switch = checkout
+        alias = config --get-regexp 'alias.*'
+        l = log --simplify-merges --no-merges --abbrev-commit --pretty=short
+        ls = log --simplify-merges
+        lx = log --simplify-merges --abbrev-commit --pretty=short
+        ll = log --simplify-merges --no-merges
+        llx = log --simplify-merges
+        lg = ”log –graph -–pretty=oneline -–abbrev-commit”
+        sync = !git fetch upstream && git pull --ff-only upstream master && git push origin master
+[grep]
+        lineNumber = true
+        extendedRegexp = true

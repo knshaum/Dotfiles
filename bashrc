@@ -5,6 +5,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 [ -r /etc/bashrc                 ] && source /etc/bashrc
+[ -r ~/bin/git-completion.bash   ] && source ~/bin/git-completion.bash
+[ -r ~/bin/prompt-for-git.sh     ] && source ~/bin/prompt-for-git.sh
 [ -r ~/.alias                    ] && source ~/.alias
 [ -r ~/perl5/perlbrew/etc/bashrc ] && source ~/perl5/perlbrew/etc/bashrc
 [ -r ~/.rvm/scripts/rvm          ] && source ~/.rvm/scripts/rvm

@@ -32,6 +32,8 @@ vnoremap <C-t> !perltidy -q<CR>
 autocmd FileType perl set autoindent|set smartindent
 autocmd FileType perl set showmatch
 
+autocmd FileType html set softtabstop=2|set shiftwidth=2
+
 " make tab in normal mode ident code
 nmap <tab> I<tab><esc>
 nmap <s-tab> ^i<bs><esc>

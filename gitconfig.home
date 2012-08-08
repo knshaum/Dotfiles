@@ -1,0 +1,6 @@
+[user]
+    name = Kevin Shaum
+    email = kevin@shaum.com
+[alias]
+    amend = commit --amend
+    st = status

@@ -1,6 +1,9 @@
 [user]
 	name = Kevin Shaum
 	email = kevin.shaum@cpanel.net
+[github]
+	user = knshaum
+	token = b227c027b28bf6be4bd7cc8500678870
 [color]
         status = auto
         branch = auto

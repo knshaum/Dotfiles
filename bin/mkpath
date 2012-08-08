@@ -23,6 +23,7 @@ my @patterns = qw{
     /Developer/usr/sbin
     /Developer/usr/bin
 
+    /usr/local/git/bin
     /usr/local/mysql/bin
     /usr/local/jdk/bin
 

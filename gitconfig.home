@@ -1,6 +1,29 @@
 [user]
     name = Kevin Shaum
     email = kevin@shaum.com
+[github]
+    user = knshaum
+    token = b227c027b28bf6be4bd7cc8500678870
+[color]
+    status = auto
+    branch = auto
+    ui = auto
 [alias]
     amend = commit --amend
+    b = branch
+    co = checkout
+    df = diff -M -C -b
+    df1 = diff -M -C -b HEAD^ HEAD
+    m = "checkout master"
+    s = status --untracked-files=no
     st = status
+    alias = config --get-regexp 'alias.*'
+    l = log --simplify-merges --no-merges --abbrev-commit --pretty=short
+    ls = log --simplify-merges
+    lx = log --simplify-merges --abbrev-commit --pretty=short
+    ll = log --simplify-merges --no-merges
+    llx = log --simplify-merges
+    lg = ”log –graph -–pretty=oneline -–abbrev-commit”
+[grep]
+    lineNumber = true
+    extendedRegexp = true

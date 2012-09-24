@@ -25,7 +25,7 @@
         lx = log --simplify-merges --abbrev-commit --pretty=short
         ll = log --simplify-merges --no-merges
         llx = log --simplify-merges
-        lg = ”log –graph -–pretty=oneline -–abbrev-commit”
+        lg = log --graph --pretty=oneline --abbrev-commit
         sync = !git fetch upstream && git pull --ff-only upstream master && git push origin master
 [grep]
         lineNumber = true

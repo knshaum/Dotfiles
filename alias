@@ -8,7 +8,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias etc='cd /etc'
 alias ackt='ack --text --type=nojs'
-alias ducks='du -cks * | sort -rn | head -11'
+alias ducks='du -cks `ls -A` | sort -rn | head -16'
 alias tmclean="find . -name '._*' -print -exec rm {} \;"
 alias tmshow="find . -name '._*' -print"
 alias wtf="watch -n 1 w -hs" 

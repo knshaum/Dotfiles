@@ -2,7 +2,9 @@
 
 gvim=`which gvim 2>/dev/null`
 mvim=`which mvim 2>/dev/null`
-if [ "$DISPLAY" != "" -a "$gvim" != "" ]; then
+if [ "$TMUX" != "" ]; then
+    tmux new-window "vim $*"
+elif [ "$DISPLAY" != "" -a "$gvim" != "" ]; then
     gvim "$@"
 elif [ "$mvim" != "" ]; then
     mvim "$@"

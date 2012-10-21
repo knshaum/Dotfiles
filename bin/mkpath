@@ -11,6 +11,8 @@ my @patterns = qw{
 
     /opt/local/apache2/bin
 
+    /usr/local/share/npm/bin
+
     /opt/local/sbin
     /opt/local/bin
     /usr/local/sbin

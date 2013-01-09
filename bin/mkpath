@@ -4,7 +4,6 @@ use strict;
 use warnings;
 
 my @patterns = qw{
-    /usr/local/cpanel/3rdparty/perl/514/bin
     /usr/local/cpanel/3rdparty/bin
     /usr/local/cpanel/scripts
     /usr/local/cpanel/bin

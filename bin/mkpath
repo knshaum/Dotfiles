@@ -5,13 +5,6 @@ use warnings;
 
 my @patterns = qw{
     /usr/local/cpanel/3rdparty/perl/*/bin
-    /usr/local/cpanel/3rdparty/bin
-    /usr/local/cpanel/scripts
-    /usr/local/cpanel/bin
-
-    /opt/local/apache2/bin
-
-    /usr/local/share/npm/bin
 
     /opt/local/sbin
     /opt/local/bin
@@ -21,6 +14,13 @@ my @patterns = qw{
     /bin
     /usr/sbin
     /usr/bin
+
+    /usr/local/cpanel/3rdparty/bin
+    /usr/local/cpanel/scripts
+    /usr/local/cpanel/bin
+
+    /opt/local/apache2/bin
+    /usr/local/share/npm/bin
 
     /Developer/usr/sbin
     /Developer/usr/bin

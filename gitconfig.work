@@ -10,6 +10,7 @@
 	ui = auto
 [alias]
         amend = commit --amend
+        amendx = commit --amend -C HEAD
         b = branch
         backport = cherry-pick -x -s
         co = checkout

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "X" = "X$1" ] ; then
+    echo -n "Must supply a template type: "
+    ls ~/Dotfiles/Templates
+    exit 1
+fi
+
+if [ ! -e ~/Dotfiles/Templates/$1 ] ; then
+    echo -n "Not a valid template type. Types available: "
+    ls ~/Dotfiles/Templates
+    exit 1
+fi
+
+if [ "X" = "X$2" ] ; then
+    echo "Must supply a script name"
+    exit 1
+fi
+
+cp ~/Dotfiles/Templates/$1 ~/bin/$2
+

@@ -14,6 +14,7 @@ alias mv='mv -i'
 [ -r ~/.pythonbrew/etc/bashrc    ] && source ~/.pythonbrew/etc/bashrc
 
 if [ -n "$PS1" ] ; then
+    set -o vi
     if [ -r ~/Dotfiles/git-completion.sh ] ; then
         source ~/Dotfiles/git-completion.sh
         export PS1='[\u@\h:\w$(__git_ps1)]\$ '

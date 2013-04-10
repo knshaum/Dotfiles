@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp -f ~/rpmbuild/RPMS/*/*.rpm ~/savedrpms/
+cp -f ~/rpmbuild/SRPMS/*.rpm ~/savedrpms/SRPMS/

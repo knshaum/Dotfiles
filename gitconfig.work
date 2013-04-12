@@ -35,3 +35,5 @@
 [grep]
         lineNumber = true
         extendedRegexp = true
+[diff]
+	algorithm = patience

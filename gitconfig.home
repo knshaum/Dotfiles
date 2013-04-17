@@ -29,3 +29,7 @@
 [grep]
     lineNumber = true
     extendedRegexp = true
+[diff]
+    algorithm = patience
+[push]
+    default = simple

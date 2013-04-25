@@ -18,13 +18,19 @@ set expandtab
 set nobackup
 set noswapfile
 set hidden
+set splitbelow
+set splitright
 filetype on
 filetype plugin on
 filetype indent on
 set mouse=a
 set scrolloff=2
-nnoremap <silent> <F3> :Explore<CR>
+" nnoremap <silent> <F3> :Explore<CR>
 nnoremap <silent> <F4> <C-w><C-w>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 nnoremap <silent> <F5> :bp<CR>
 nnoremap <silent> <S-F5> :bn<CR>
 vnoremap <C-t> !perltidy -q<CR>

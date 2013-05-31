@@ -13,7 +13,7 @@ alias mv='mv -i'
 [ -r ~/.rvm/scripts/rvm          ] && source ~/.rvm/scripts/rvm
 [ -r ~/.pythonbrew/etc/bashrc    ] && source ~/.pythonbrew/etc/bashrc
 
-export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+#export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 if [ -n "$PS1" ] ; then
     set -o vi

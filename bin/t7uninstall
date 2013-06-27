@@ -1,2 +1,2 @@
 #!/bin/sh
-rpm -ev easy-tomcat7 easy-tomcat7-admin-webapps easy-tomcat7-docs-webapp easy-tomcat7-el-2.2-api  easy-tomcat7-javadoc easy-tomcat7-jsp-2.2-api easy-tomcat7-jsvc easy-tomcat7-lib easy-tomcat7-servlet-3.0-api easy-tomcat7-systemv easy-tomcat7-webapps
+rpm -ev easy-tomcat7 easy-tomcat7-admin-webapps easy-tomcat7-docs-webapp easy-tomcat7-el-2.2-api  easy-tomcat7-javadoc easy-tomcat7-jsp-2.2-api easy-tomcat7-lib easy-tomcat7-servlet-3.0-api easy-tomcat7-webapps

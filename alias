@@ -25,6 +25,7 @@ if [ -d /usr/local/cpanel ] ; then
     alias ulap='cd /usr/local/apache'
     alias vcp='cd /var/cpanel'
     alias ea='cd /root/dev/easy'
+    alias t7='cd /root/dev/rpms/easy-tomcat7'
     alias tiers='curl http://qa-build.cpanel.net/cpanelsync/TIERS' 
 
     alias md='svn md'

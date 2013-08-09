@@ -1,3 +1,4 @@
 #!/bin/sh
-echo 'QA-BUILD:  ' $(wget -O - -q http://qa-build.cpanel.net/cpanelsync/easy/version_easy)
-echo 'PRODUCTION:' $(wget -O - -q http://httpupdate.cpanel.net/cpanelsync/easy/version_easy)
+echo 'BRANCH-BUILD: ' $(wget -O - -q http://branch-build.dev.cpanel.net/cpanelsync/easy/version_easy)
+echo 'QA-BUILD:     ' $(wget -O - -q http://qa-build.cpanel.net/cpanelsync/easy/version_easy)
+echo 'PRODUCTION:   ' $(wget -O - -q http://httpupdate.cpanel.net/cpanelsync/easy/version_easy)

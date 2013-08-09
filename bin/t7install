@@ -1,2 +1,9 @@
 #!/bin/sh
-rpm -Uvh --replacepkgs /root/savedrpms/easy-tomcat7-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-admin-webapps-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-docs-webapp-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-el-2.2-api-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-javadoc-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-jsp-2.2-api-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-lib-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-servlet-3.0-api-7.0.41-0.noarch.rpm /root/savedrpms/easy-tomcat7-webapps-7.0.41-0.noarch.rpm
+
+if [ -n "$1" ] ; then
+    version=$1
+else
+    version='7.0.41-1'
+fi
+
+rpm -Uvh --replacepkgs /root/savedrpms/easy-tomcat7-$version.noarch.rpm /root/savedrpms/easy-tomcat7-admin-webapps-$version.noarch.rpm /root/savedrpms/easy-tomcat7-docs-webapp-$version.noarch.rpm /root/savedrpms/easy-tomcat7-el-2.2-api-$version.noarch.rpm /root/savedrpms/easy-tomcat7-javadoc-$version.noarch.rpm /root/savedrpms/easy-tomcat7-jsp-2.2-api-$version.noarch.rpm /root/savedrpms/easy-tomcat7-lib-$version.noarch.rpm /root/savedrpms/easy-tomcat7-servlet-3.0-api-$version.noarch.rpm /root/savedrpms/easy-tomcat7-webapps-$version.noarch.rpm
